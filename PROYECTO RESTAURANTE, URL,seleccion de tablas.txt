@@ -84,7 +84,7 @@ DELETE	http://localhost:3000/reports/:id	Eliminar reporte por ID
 📦 tbl_role
 Método	URL	Descripción
 GET	http://localhost:3000/role	Obtener todos los roles
-GET	http://localhost:3000/role/:id	Obtener rol por ID
+GET	http://localhost:3000/role/:id es el nombre del rol, para mmesero es "Mesero" y para chef si es en minuscula	Obtener rol por ID
 POST	http://localhost:3000/role	Crear nuevo rol
 PUT	http://localhost:3000/role/:id	Actualizar rol por ID
 DELETE	http://localhost:3000/role/:id	Eliminar rol por ID

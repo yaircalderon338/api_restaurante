@@ -127,7 +127,7 @@ INSERT INTO tbl_role (role) VALUES
 
 -- EMPLEADOS
 CREATE TABLE tbl_staff (
-    staffID SERIAL PRIMARY KEY,
+    staffid SERIAL PRIMARY KEY,
     username VARCHAR(25) NOT NULL,
     password VARCHAR(100) NOT NULL,
     status TEXT NOT NULL,
