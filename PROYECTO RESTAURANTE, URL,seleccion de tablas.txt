@@ -1,30 +1,27 @@
-PROYECTO RESTAURANTE
--- Tabla: admin
-SELECT * FROM admin;
+-- Para la tabla tbl_admin
+SELECT * FROM tbl_admin;
 
--- Tabla: menu
-SELECT * FROM menu;
+-- Para la tabla tbl_menu
+SELECT * FROM tbl_menu;
 
--- Tabla: menuitem
-SELECT * FROM menuitem;
+-- Para la tabla tbl_menuitem
+SELECT * FROM tbl_menuitem;
 
--- Tabla: "order"
-SELECT * FROM "order";  -- entre comillas porque 'order' es palabra reservada en SQL
+-- Para la tabla tbl_order
+SELECT * FROM tbl_order;
 
--- Tabla: orderdetail
-SELECT * FROM orderdetail;
+-- Para la tabla tbl_orderdetail
+SELECT * FROM tbl_orderdetail;
 
--- Tabla: staff
-SELECT * FROM staff;
+-- Para la tabla tbl_role
+SELECT * FROM tbl_role;
 
--- Tabla: reports
-SELECT * FROM reports;
+-- Para la tabla tbl_staff
+SELECT * FROM tbl_staff;
 
--- Tabla: role
-SELECT * FROM role;
+-- Para la tabla tbl_reports
+SELECT * FROM tbl_reports;
 
--- Tabla: report_order
-SELECT * FROM report_order;
 
 URL NECESARIAS 
 
@@ -92,20 +89,13 @@ POST	http://localhost:3000/role	Crear nuevo rol
 PUT	http://localhost:3000/role/:id	Actualizar rol por ID
 DELETE	http://localhost:3000/role/:id	Eliminar rol por ID
 
-📦 tbl_report_order
-Método	URL	Descripción
-GET	http://localhost:3000/report_order	Obtener todas las relaciones reporte-orden
-GET	http://localhost:3000/report_order/:id	Obtener relación por ID
-POST	http://localhost:3000/report_order	Crear nueva relación reporte-orden
-PUT	http://localhost:3000/report_order/:id	Actualizar relación por ID
-DELETE	http://localhost:3000/report_order/:id	Eliminar relación por ID
-
-
 PARA PODER ENTRAR 
 
 para inicializar el node.js y obtener las url y realizar consultas debemos inicializarlo en una terminal de visual studio 
 1.cd backend
-node server.js
+nodemon server.js
+npm start
+
 
 inicializar en una terminal en visual, en veu podemos interactuar con la interfaz grafica 
 2.cd frontend
@@ -137,3 +127,6 @@ npm create vite@latest
 cd frontend
 npm install
 npm install vue-router@4 vuex@4 axios
+npm install -g nodemon
+npm install --save-dev nodemon
+

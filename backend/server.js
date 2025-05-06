@@ -20,7 +20,6 @@ const orderdetailRoutes = require('./routes/orderdetail');
 const staffRoutes = require('./routes/staff');
 const reportsRoutes = require('./routes/reports');
 const roleRoutes = require('./routes/role');
-const reportOrderRoutes = require('./routes/report_order');
 
 // Usar rutas
 app.use('/admin', adminRoutes);
@@ -31,7 +30,6 @@ app.use('/orderdetail', orderdetailRoutes);
 app.use('/staff', staffRoutes);
 app.use('/reports', reportsRoutes);
 app.use('/role', roleRoutes);
-app.use('/report_order', reportOrderRoutes);
 
 // Iniciar servidor
 app.listen(port, () => {
