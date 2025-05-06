@@ -1,0 +1,139 @@
+PROYECTO RESTAURANTE
+-- Tabla: admin
+SELECT * FROM admin;
+
+-- Tabla: menu
+SELECT * FROM menu;
+
+-- Tabla: menuitem
+SELECT * FROM menuitem;
+
+-- Tabla: "order"
+SELECT * FROM "order";  -- entre comillas porque 'order' es palabra reservada en SQL
+
+-- Tabla: orderdetail
+SELECT * FROM orderdetail;
+
+-- Tabla: staff
+SELECT * FROM staff;
+
+-- Tabla: reports
+SELECT * FROM reports;
+
+-- Tabla: role
+SELECT * FROM role;
+
+-- Tabla: report_order
+SELECT * FROM report_order;
+
+URL NECESARIAS 
+
+📦 tbl_admin
+Método	URL	Descripción
+GET	http://localhost:3000/admin	Obtener todos los admin
+GET	http://localhost:3000/admin/:id	Obtener admin por ID
+POST	http://localhost:3000/admin	Crear nuevo admin
+PUT	http://localhost:3000/admin/:id	Actualizar admin por ID
+DELETE	http://localhost:3000/admin/:id	Eliminar admin por ID
+
+📦 tbl_menu
+Método	URL	Descripción
+GET	http://localhost:3000/menu	Obtener todos los menús
+GET	http://localhost:3000/menu/:id	Obtener menú por ID
+POST	http://localhost:3000/menu	Crear nuevo menú
+PUT	http://localhost:3000/menu/:id	Actualizar menú por ID
+DELETE	http://localhost:3000/menu/:id	Eliminar menú por ID
+
+📦 tbl_menuitem
+Método	URL	Descripción
+GET	http://localhost:3000/menuitem	Obtener todos los items de menú
+GET	http://localhost:3000/menuitem/:id	Obtener item de menú por ID
+POST	http://localhost:3000/menuitem	Crear nuevo item de menú
+PUT	http://localhost:3000/menuitem/:id	Actualizar item de menú por ID
+DELETE	http://localhost:3000/menuitem/:id	Eliminar item de menú por ID
+
+📦 tbl_order
+Método	URL	Descripción
+GET	http://localhost:3000/order	Obtener todas las órdenes
+GET	http://localhost:3000/order/:id	Obtener orden por ID
+POST	http://localhost:3000/order	Crear nueva orden
+PUT	http://localhost:3000/order/:id	Actualizar orden por ID
+DELETE	http://localhost:3000/order/:id	Eliminar orden por ID
+
+📦 tbl_orderdetail
+Método	URL	Descripción
+GET	http://localhost:3000/orderdetail	Obtener todos los detalles de orden
+GET	http://localhost:3000/orderdetail/:id	Obtener detalle de orden por ID
+POST	http://localhost:3000/orderdetail	Crear nuevo detalle de orden
+PUT	http://localhost:3000/orderdetail/:id	Actualizar detalle de orden por ID
+DELETE	http://localhost:3000/orderdetail/:id	Eliminar detalle de orden por ID
+
+📦 tbl_staff
+Método	URL	Descripción
+GET	http://localhost:3000/staff	Obtener todos los empleados
+GET	http://localhost:3000/staff/:id	Obtener empleado por ID
+POST	http://localhost:3000/staff	Crear nuevo empleado
+PUT	http://localhost:3000/staff/:id	Actualizar empleado por ID
+DELETE	http://localhost:3000/staff/:id	Eliminar empleado por ID
+
+📦 tbl_reports
+Método	URL	Descripción
+GET	http://localhost:3000/reports	Obtener todos los reportes
+GET	http://localhost:3000/reports/:id	Obtener reporte por ID
+POST	http://localhost:3000/reports	Crear nuevo reporte
+PUT	http://localhost:3000/reports/:id	Actualizar reporte por ID
+DELETE	http://localhost:3000/reports/:id	Eliminar reporte por ID
+
+📦 tbl_role
+Método	URL	Descripción
+GET	http://localhost:3000/role	Obtener todos los roles
+GET	http://localhost:3000/role/:id	Obtener rol por ID
+POST	http://localhost:3000/role	Crear nuevo rol
+PUT	http://localhost:3000/role/:id	Actualizar rol por ID
+DELETE	http://localhost:3000/role/:id	Eliminar rol por ID
+
+📦 tbl_report_order
+Método	URL	Descripción
+GET	http://localhost:3000/report_order	Obtener todas las relaciones reporte-orden
+GET	http://localhost:3000/report_order/:id	Obtener relación por ID
+POST	http://localhost:3000/report_order	Crear nueva relación reporte-orden
+PUT	http://localhost:3000/report_order/:id	Actualizar relación por ID
+DELETE	http://localhost:3000/report_order/:id	Eliminar relación por ID
+
+
+PARA PODER ENTRAR 
+
+para inicializar el node.js y obtener las url y realizar consultas debemos inicializarlo en una terminal de visual studio 
+1.cd backend
+node server.js
+
+inicializar en una terminal en visual, en veu podemos interactuar con la interfaz grafica 
+2.cd frontend
+npm run dev
+
+
+DEPENDENCIAS 
+
+npm init -y
+npm install express
+npm install pg
+npm install dotenv
+npm install cors
+npm install --save-dev nodemon
+npm install mysql2
+
+
+opción 2 menos líneas de código 
+npm init -y
+npm install express pg dotenv cors
+npm install --save-dev nodemon
+
+DEPENDENCIAS 
+
+npm init -y
+npm install express cors body-parser pg axios
+npm install --save-dev nodemon
+npm create vite@latest
+cd frontend
+npm install
+npm install vue-router@4 vuex@4 axios

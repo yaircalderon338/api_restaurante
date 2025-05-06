@@ -1,0 +1,73 @@
+/* Fondo general */
+body {
+    background: radial-gradient(circle at center, #0d0d1a 0%, #000 100%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #f0f0f0;
+  }
+  
+  /* Contenedor */
+  .api-tester {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 24px;
+    border-radius: 12px;
+    background: #1c1c2b;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+    text-align: center;
+  }
+  
+  /* Título */
+  .api-tester h1 {
+    color: #0ff;
+    margin-bottom: 24px;
+  }
+  
+  /* Inputs, selects y textarea */
+  .control {
+    display: block;
+    width: 100%;
+    margin: 14px 0;
+    padding: 12px;
+    background: #111;
+    border: 1px solid #333;
+    color: #0f0;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .control::placeholder {
+    color: #555;
+  }
+  
+  /* Botón */
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: #0ff;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 18px 0;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #0cc;
+  }
+  
+  /* Resultado */
+  pre {
+    background: #000;
+    color: #0f0;
+    padding: 16px;
+    overflow: auto;
+    border-radius: 6px;
+    text-align: left;
+  }
+  
